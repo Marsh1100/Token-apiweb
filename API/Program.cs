@@ -1,6 +1,15 @@
+using Microsoft.EntityFrameworkCore;
+using Persistencia;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+builder.Services.AddDbContext<TokenWebApiContext>(optionsBuilder =>
+{
+ string  connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
+    optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
+});
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
