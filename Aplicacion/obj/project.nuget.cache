@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zaBr3tLiS1QRVpy0rv9MqO7Xh3ukFiDxn9lf59twXQnk2DbHDVL3nPlLF1vdi/12mxNMwK3G912DBC4EVHS42A==",
+  "dgSpecHash": "kxw85/WNY8vf/9FYQOI/O0vccQQY9jiKXEzkZpWQqtL5DwcKAUYJzpM2pLBvfp0hCsb7FLlTYhsEOkeik6tjmg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj",
+  "projectFilePath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\APT01-60\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "C:\\Users\\APT01-60\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",
