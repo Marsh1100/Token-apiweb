@@ -1,4 +1,5 @@
 
+using Dominio.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
@@ -9,6 +10,10 @@ public class TokenWebApiContext : DbContext
     public TokenWebApiContext(DbContextOptions<TokenWebApiContext> options) : base(options)
     {
     }
+
+    public DbSet<User> Users { get; set; }
+    public DbSet<Rol> Rols { get; set;}
+    public DbSet<UserRol> UserRols { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
