@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Aplicacion.Repository;
 using Dominio.Interfaces;
 using Persistencia;
 
@@ -15,9 +16,30 @@ public class UnitOfWork : IUnitOfWork, IDisposable
         _context = context;
     }
 
-    public IUser Users => throw new NotImplementedException();
+    private RolRepository _rol;
 
-    public IRol Rols => throw new NotImplementedException();
+    public IRol Rols
+    {
+        get{
+            if(_rol == null){
+                _rol = new RolRepository(_context);
+            }
+            return _rol;
+        }
+    }
+
+private UserRepository _user;
+
+    public IUser Users
+    {
+        get{
+            if(_user == null){
+                _user = new UserRepository(_context);
+            }
+            return _user;
+        }
+    }
+
 
     public void Dispose()
     {
