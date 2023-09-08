@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using API.Dtos;
 using API.Services;
 using Dominio.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace API.Controllers;
@@ -18,6 +19,7 @@ public class UserController : ApiBaseController
     }
 
     [HttpPost("register")]
+    [Authorize]
     public async Task<ActionResult> RegisterAsync(RegisterDto model)
     {
         var result = await _userService.RegisterAsync(model);
