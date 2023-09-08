@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {}
+    "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {
+    "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj",
+        "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\APT01-60\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\obj\\",
+        "outputPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-60\\AppData\\Roaming\\NuGet\\NuGet.Config"

@@ -11,7 +11,7 @@ public class DatosUserDto
     [Required]
     public string Mensaje { get; set; }
     [Required]
-    public string EstadoAutenticado { get; set; }
+    public bool EstadoAutenticado { get; set; }
 
     [Required]
     public string UserName { get; set; }

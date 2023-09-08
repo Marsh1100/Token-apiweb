@@ -13,6 +13,7 @@ builder.Services.AddDbContext<TokenWebApiContext>(optionsBuilder =>
 });
 builder.Services.ConfigureCors(); //Extensiones
 builder.Services.AddControllers();
+builder.Services.AddJwt(builder.Configuration);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
@@ -26,11 +27,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-
+//Importancia del orden...
 app.UseCors("CorsPolicy");
 
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
