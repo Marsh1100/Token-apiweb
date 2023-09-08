@@ -1,10 +1,22 @@
+using System.Net;
 using API.Extensions;
+using API.Helpers;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.EntityFrameworkCore;
 using Persistencia;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+builder.Services.AddControllers();
+
+builder.Services.AddHttpContextAccessor();
+
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+builder.Services.AddAplicationServices();
+
+builder.Services.AddJwt(builder.Configuration);
 
 builder.Services.AddDbContext<TokenWebApiContext>(optionsBuilder =>
 {
@@ -12,11 +24,16 @@ builder.Services.AddDbContext<TokenWebApiContext>(optionsBuilder =>
     optionsBuilder.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
 });
 builder.Services.ConfigureCors(); //Extensiones
-builder.Services.AddControllers();
-builder.Services.AddJwt(builder.Configuration);
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddAuthorization(opts => 
+{
+    opts.DefaultPolicy = new AuthorizationPolicyBuilder()
+                        .RequireAuthenticatedUser()
+                        .AddRequirements(new GlobalVerbRoleRequeriment())
+                        .Build();
+});
+
 
 var app = builder.Build();
 
