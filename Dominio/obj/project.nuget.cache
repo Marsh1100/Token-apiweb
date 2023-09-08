@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AKgrkDVMWH5fI3txIfdCrZpd1LQp8RTXkUbTs+zL9K+yjj4zZwMXObDApr+ZAxP0cGCBpSGoUXaRXQEdZg+dDA==",
+  "dgSpecHash": "oWkdLZ/xgNE5fEPA4+CpqQyd2onOW9FI65FM5nhTH3oM80xNewNP+704DylkoaLnL/YLMgJmNNW7MSu/CykXIQ==",
   "success": true,
-  "projectFilePath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\APT01-60\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "C:\\Users\\APT01-60\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",

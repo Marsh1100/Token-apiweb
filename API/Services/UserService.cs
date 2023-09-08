@@ -42,8 +42,8 @@ public class UserService : IUserService
         usuario.Password = _passwordHasher.HashPassword(usuario, registerDto.Password);
         var usuarioExiste = _unitOfWork.Users
                             .Find(u => u.Username.ToLower() == registerDto.Username.ToLower());
-        
-        if(usuarioExiste == null)
+        Console.WriteLine(usuario.Password);
+        if(usuarioExiste != null)
         {
             try
             {

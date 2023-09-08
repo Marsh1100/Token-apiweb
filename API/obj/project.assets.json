@@ -2376,11 +2376,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj",
+      "projectUniqueName": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj",
+      "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj",
       "packagesPath": "C:\\Users\\APT01-60\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\obj\\",
+      "outputPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\APT01-60\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2395,8 +2395,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj": {
-              "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj"
+            "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj": {
+              "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj"
             }
           }
         }

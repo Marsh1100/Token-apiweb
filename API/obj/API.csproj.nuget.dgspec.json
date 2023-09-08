@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj": {}
+    "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj": {}
   },
   "projects": {
-    "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj": {
+    "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj",
+        "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj",
         "packagesPath": "C:\\Users\\APT01-60\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\obj\\",
+        "outputPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-60\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj"
+              "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj"
               }
             }
           }
@@ -100,14 +100,14 @@
         }
       }
     },
-    "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj": {
+    "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj",
+        "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj",
         "packagesPath": "C:\\Users\\APT01-60\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\obj\\",
+        "outputPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-60\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -122,11 +122,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {
-                "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj"
+              "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj"
               },
-              "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj"
+              "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -160,14 +160,14 @@
         }
       }
     },
-    "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {
+    "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj",
+        "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\APT01-60\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\obj\\",
+        "outputPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-60\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -219,14 +219,14 @@
         }
       }
     },
-    "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj": {
+    "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj",
+        "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\APT01-60\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\obj\\",
+        "outputPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\APT01-60\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -241,8 +241,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {
-                "projectPath": "c:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj"
+              "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {
+                "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj"
               }
             }
           }
