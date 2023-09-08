@@ -30,8 +30,9 @@ public static class ApplicationServiceExtension
     {
         services.AddScoped<IPasswordHasher<User>, PasswordHasher<User>>();
         services.AddScoped<IUserService, UserService>();
-        services.AddScoped<IAuthorizationHandler, GlobalVerbRoleHandler>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
+
+        services.AddScoped<IAuthorizationHandler, GlobalVerbRoleHandler>();
     }
 
     //Cambio de esquema (?
