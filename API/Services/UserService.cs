@@ -92,7 +92,12 @@ public class UserService : IUserService
                     _unitOfWork.Users.Update(usuario);
                     await _unitOfWork.SaveAsync();
                     return $"Rol {model.Rol} agregado a la cuenta {model.Username} de forma existosa!";
+
                 }
+                
+                    return $"El usuario {model.Username} ya tiene ese rol asignado";
+
+                
                 
             }
 
