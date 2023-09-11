@@ -2,6 +2,7 @@
 
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using System.Security.Cryptography;
 using System.Text;
 using API.Dtos;
 using API.Helpers;
@@ -138,7 +139,7 @@ public class UserService : IUserService
 
     public async Task<DatosUserDto> GetTokenAsync(LoginDto model)
     {
-        DatosUserDto datosUserDto = new DatosUserDto();
+        DatosUserDto datosUserDto = new();
         var usuario = await _unitOfWork.Users   
                             .GetByUsernameAsync(model.Username);
         
@@ -157,12 +158,19 @@ public class UserService : IUserService
             if(usuario != null)
             {
                 JwtSecurityToken jwtSecurityToken = CreateJwtToken(usuario);
+
+                string refreshTokenCreado = GenerarRefreshToken();
+
                 datosUserDto.Token = new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
                 datosUserDto.UserName = usuario.Username;
                 datosUserDto.Email = usuario.Email;
                 datosUserDto.Roles = usuario.Rols
                                     .Select(p=>p.Nombre)
                                     .ToList();
+                datosUserDto.RefreshToken = refreshTokenCreado;
+
+                await GuardarHistorialRefreshToken(usuario.Id, datosUserDto.Token, refreshTokenCreado);
+
                 return datosUserDto;
             }else{
                 datosUserDto.EstadoAutenticado=false;
@@ -176,5 +184,72 @@ public class UserService : IUserService
             return datosUserDto;
 
     }
+
+    private static string GenerarRefreshToken()
+    {
+        var byteArray = new byte[64];
+        var refreshToken = "";
+        using ( var mg = RandomNumberGenerator.Create())
+        {
+            mg.GetBytes(byteArray);
+            refreshToken = Convert.ToBase64String(byteArray);
+        }
+        Console.WriteLine(refreshToken);
+        return refreshToken;
+
+      /*  var randomNumber = new byte[64];
+            using var rng = RandomNumberGenerator.Create();
+            rng.GetBytes(randomNumber);
+        return Convert.ToBase64String(randomNumber);*/
+    }
+
+    private async Task<AutoTokenResponseDto> GuardarHistorialRefreshToken(int idUsuario,string token, string refreshToken)
+    {
+        var metHistorial = new HistorialRefreshToken();
+        var EsActivo = metHistorial.TokenActivo();
+        var historial = new HistorialRefreshToken()
+        {
+            IdUserFK = idUsuario,
+            Token = token,
+            RefreshToken = refreshToken,
+            FechaCreacion = DateTime.UtcNow,
+            //Pueden ser horas o días
+            FechaExpiracion = DateTime.UtcNow.AddMinutes(2),
+            Activo = EsActivo
+        };
+        _unitOfWork.RefreshTokens.Add(historial);
+                await _unitOfWork.SaveAsync();
+
+        return  new AutoTokenResponseDto { Token = token, RefreshToken = refreshToken, Result = true, Msg = "Ok" };
+
+        
+    }
+
+    public async Task<AutoTokenResponseDto> GetTokenRefreshAsync(RefreshTokenUserDto model, int idUsuario)
+
+    {
+        var refreshTokenFind = _unitOfWork.RefreshTokens.Find(u => u.Token== model.Token && 
+        u.RefreshToken == model.RefreshToken &&
+        u.Id == idUsuario);
+
+        if(refreshTokenFind == null)
+        {
+            return  new AutoTokenResponseDto {Result = false, Msg = "No existe refresh token"};
+
+        }
+        var user = await _unitOfWork.Users.GetByUserIdAsync(idUsuario);
+        if(user == null )
+        {
+            return  new AutoTokenResponseDto {Result = false, Msg = "No existe usuario registrado"};
+
+        }
+        var refreshToken = GenerarRefreshToken();
+        JwtSecurityToken jwtSecurityToken = CreateJwtToken(user); 
+        var tokencreado= new JwtSecurityTokenHandler().WriteToken(jwtSecurityToken);
+
+        return   await GuardarHistorialRefreshToken(idUsuario,tokencreado, refreshToken);
+
+        
+   }
 
 }
