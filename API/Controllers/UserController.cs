@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Threading.Tasks;
 using API.Dtos;
@@ -23,7 +24,12 @@ public class UserController : ApiBaseController
     public async Task<ActionResult> RegisterAsync(RegisterDto model)
     {
         var result = await _userService.RegisterAsync(model);
-        return Ok(result);
+
+        if(result != null)
+        {
+            return Ok(result);
+        }
+        return Unauthorized();
     }
 
     [HttpPost("token")]
@@ -31,6 +37,28 @@ public class UserController : ApiBaseController
     {
         var result = await _userService.GetTokenAsync(model);
         return Ok(result);
+    }
+
+    [HttpPost("refreshtoken")]
+    public async Task<IActionResult> GetRefreshTokenAsync([FromBody] RefreshTokenUserDto model)
+    {
+        var tokenHandler = new JwtSecurityTokenHandler();
+
+        var tokenExpirado = tokenHandler.ReadJwtToken(model.Token);
+
+        if(tokenExpirado.ValidTo > DateTime.UtcNow)
+        {
+            return BadRequest(new AutoTokenResponseDto { Result = false, Msg = "El Token no ha expirado" });;
+        }
+        string idUsuario = tokenExpirado.Claims.First(
+            X => X.Type =="uid").Value.ToString();
+        var autorizacion = await _userService.GetTokenRefreshAsync(model,int.Parse(idUsuario));
+        
+        if(autorizacion.Result){
+            return Ok(autorizacion);
+        }
+
+        return BadRequest(autorizacion);
     }
 
     [HttpPost("addrole")]
