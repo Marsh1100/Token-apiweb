@@ -2371,32 +2371,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\APT01-60\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj",
+      "projectUniqueName": "D:\\Documents\\Downloads\\Token-apiweb\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\API.csproj",
-      "packagesPath": "C:\\Users\\APT01-60\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\API\\obj\\",
+      "projectPath": "D:\\Documents\\Downloads\\Token-apiweb\\API\\API.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\Downloads\\Token-apiweb\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\APT01-60\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\sdk\\7.0.306\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj": {
-              "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Aplicacion\\Aplicacion.csproj"
+            "D:\\Documents\\Downloads\\Token-apiweb\\Aplicacion\\Aplicacion.csproj": {
+              "projectPath": "D:\\Documents\\Downloads\\Token-apiweb\\Aplicacion\\Aplicacion.csproj"
             }
           }
         }
@@ -2465,7 +2466,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

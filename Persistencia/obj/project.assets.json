@@ -689,19 +689,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\APT01-60\\.nuget\\packages\\": {}
+    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "D:\\Documents\\Downloads\\Token-apiweb\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\Persistencia.csproj",
-      "packagesPath": "C:\\Users\\APT01-60\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Persistencia\\obj\\",
+      "projectPath": "D:\\Documents\\Downloads\\Token-apiweb\\Persistencia\\Persistencia.csproj",
+      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
+      "outputPath": "D:\\Documents\\Downloads\\Token-apiweb\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\APT01-60\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
@@ -713,8 +713,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj": {
-              "projectPath": "C:\\Users\\APT01-60\\Documents\\mb\\Token-apiweb\\Dominio\\Dominio.csproj"
+            "D:\\Documents\\Downloads\\Token-apiweb\\Dominio\\Dominio.csproj": {
+              "projectPath": "D:\\Documents\\Downloads\\Token-apiweb\\Dominio\\Dominio.csproj"
             }
           }
         }
@@ -754,7 +754,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.306\\RuntimeIdentifierGraph.json"
       }
     }
   }

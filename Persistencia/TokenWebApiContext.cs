@@ -14,6 +14,7 @@ public class TokenWebApiContext : DbContext
     public DbSet<User> Users { get; set; }
     public DbSet<Rol> Rols { get; set;}
     public DbSet<UserRol> UserRols { get; set; }
+    public DbSet<HistorialRefreshToken> RefreshTokens { get; set; } 
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
