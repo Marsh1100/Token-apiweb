@@ -25,5 +25,11 @@ public class UserRepository : GenericRepository<User>, IUser
                 .FirstOrDefaultAsync(u => u.Username.ToLower() == username.ToLower()); 
     }
 
+    public async Task<User> GetByUserIdAsync(int id)
+    {
+        return await _context.Users
+                .Include(u => u.Rols)
+                .FirstOrDefaultAsync(u => u.Id == id);
+    }
    
 }
