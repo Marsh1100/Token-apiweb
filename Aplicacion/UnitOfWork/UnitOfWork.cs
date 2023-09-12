@@ -28,7 +28,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
         }
     }
 
-private UserRepository _user;
+    private UserRepository _user;
 
     public IUser Users
     {
@@ -37,6 +37,18 @@ private UserRepository _user;
                 _user = new UserRepository(_context);
             }
             return _user;
+        }
+    }
+
+    private RefreshTokenRepository _refresh;
+
+    public IRefreshToken RefreshTokens
+    {
+        get{
+            if(_refresh == null){
+                _refresh = new RefreshTokenRepository(_context);
+            }
+            return _refresh;
         }
     }
 
