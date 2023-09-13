@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "06TKWhGbBJrKLtk1yCjhSN3u/myBsUUZRgDjt8eMi6izU2bf4bx+2jPl+re1v/tA26d/qFaKaEpiBe3LQ4K38Q==",
+  "dgSpecHash": "YHonhV5InBztPgycGZNf5WFOw17F9SoU+T/Wj2BRCWEo5f555mhfdfyVhWL0McmbrTPdx2ok5YPlNXY4R20L6Q==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Downloads\\Token-apiweb\\Persistencia\\Persistencia.csproj",
+  "projectFilePath": "d:\\Documents\\Downloads\\Token-apiweb\\Persistencia\\Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.10\\microsoft.entityframeworkcore.7.0.10.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.10\\microsoft.entityframeworkcore.abstractions.7.0.10.nupkg.sha512",

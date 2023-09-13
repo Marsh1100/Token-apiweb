@@ -2376,11 +2376,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Documents\\Downloads\\Token-apiweb\\API\\API.csproj",
+      "projectUniqueName": "d:\\Documents\\Downloads\\Token-apiweb\\API\\API.csproj",
       "projectName": "API",
-      "projectPath": "D:\\Documents\\Downloads\\Token-apiweb\\API\\API.csproj",
+      "projectPath": "d:\\Documents\\Downloads\\Token-apiweb\\API\\API.csproj",
       "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "D:\\Documents\\Downloads\\Token-apiweb\\API\\obj\\",
+      "outputPath": "d:\\Documents\\Downloads\\Token-apiweb\\API\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -2396,8 +2396,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "D:\\Documents\\Downloads\\Token-apiweb\\Aplicacion\\Aplicacion.csproj": {
-              "projectPath": "D:\\Documents\\Downloads\\Token-apiweb\\Aplicacion\\Aplicacion.csproj"
+            "d:\\Documents\\Downloads\\Token-apiweb\\Aplicacion\\Aplicacion.csproj": {
+              "projectPath": "d:\\Documents\\Downloads\\Token-apiweb\\Aplicacion\\Aplicacion.csproj"
             }
           }
         }

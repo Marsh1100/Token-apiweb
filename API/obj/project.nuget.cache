@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "RBn64Ze/GvDNU1dvzsF/kOM+khBoUDJQR51BXbWCGkCjMtNWPDRGNi8RdpwjUcUdqeJLy7DxuSRyoZYO78PXSQ==",
+  "dgSpecHash": "86AFUT/nttJikSM+kSl1bCWH8j2UpzHOIhmGdUfS/kCg8Pza+yz7MZ+Gh28DN/EUcuCSdCBwP355kNqiQoJAQw==",
   "success": true,
-  "projectFilePath": "D:\\Documents\\Downloads\\Token-apiweb\\API\\API.csproj",
+  "projectFilePath": "d:\\Documents\\Downloads\\Token-apiweb\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Usuario\\.nuget\\packages\\aspnetcoreratelimit\\5.0.0\\aspnetcoreratelimit.5.0.0.nupkg.sha512",
     "C:\\Users\\Usuario\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
